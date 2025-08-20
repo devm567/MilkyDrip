@@ -1,0 +1,55 @@
+.Header {
+  background-color: #17313E;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  font-size: large;
+}
+
+#logo {
+  font-family: 'Noto Sans';
+}
+
+input {
+  background-color: #ededeb;
+  outline: 0;
+}
+
+.headerSearch {
+  background-color: #ededeb;
+  border-radius: 15px;
+  color: #17313E;
+  border-right: 1px solid #ededeb;
+}
+
+.searchIcon {
+  color: #17313E;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* For tablet */
+@media (max-width: 850px) {
+  .categories,
+  .LoginSection {
+    display: none; /* hide on tablet & mobile */
+  }
+
+  .hamburger {
+    display: inline-block; /* show hamburger */
+  }
+}
+
+/*For Mobils*/
+@media (max-width: 500px) {
+    .headerSearch{
+      display: none; /* hide on tablet & mobile */
+    }   
+
+    header{
+        justify-content:space-evenly;
+        align-items: end;
+    }
+}
