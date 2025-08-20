@@ -1,0 +1,31 @@
+main{
+    background-image: url("images/banner1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    /* min-width: 100vw; */
+}
+
+.mainContent{
+    position: absolute;
+    top:65%;
+    left:25%;
+}
+
+.card{
+    border-radius: 3px;
+    width: 25vw;
+}
+
+img{
+    width: 25vw;
+    border-radius: 3px;
+    height: 45vh;
+}
+
+button{
+    width: 100%;
+}
