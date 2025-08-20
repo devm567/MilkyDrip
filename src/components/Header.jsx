@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import SearchFeature from "./SearchFeature.jsx";
+import Login from "./Login.jsx";
 
 
 /* Logo */
@@ -24,18 +25,6 @@ function Categories() {
 }
 
 
-/* Login Section */
-function Login() {
-  return (
-    <div className={styles.LoginSection}>
-        <div className={`d-flex gap-4 align-items-center ps-3 ${styles.rightSection}`}>
-            <span className="bi bi-heart"></span>
-            <span className="bi bi-bag"></span>
-            <button className="btn btn-warning">Login/SignUp</button>
-        </div>
-    </div>
-  );
-}
 
 /* Hamburger */
 function Hamburger() {
@@ -57,3 +46,15 @@ function Header() {
 }
 
 export default Header;
+
+
+window.addEventListener("message", (event) => {
+  if (event.data.type === "login") {
+    console.log("Logged in:", event.data.name, event.data.pwd);
+    document.getElementById("loginButton").textContent = `Hi ! ${event.data.name}`;
+  } 
+  else if (event.data.type === "signup") {
+    console.log("Signed up:", event.data.name, event.data.pwd, event.data.cnfpwd);
+    document.getElementById("loginButton").textContent = `Hi ! ${event.data.name}`;
+  }
+});
