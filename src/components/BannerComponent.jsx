@@ -5,11 +5,11 @@ function BannerComponent(){
         <main className="p-5">
             <div className={`${styles.mainContent} d-flex gap-5`}>
                 <div className={`${styles.card} ` }>
-                    <img src="./images/manfashion1.png" alt="Men Fashion" className="d-block"/>
+                    <img src="./images/manfashion1-min.png" alt="Men Fashion" className="d-block"/>
                     <button className="btn btn-danger">Men Fashion</button>
                 </div>
                 <div className={`${styles.card}`}>
-                <img src="./images/womanFashion1.png" alt="Women Fashion" className="d-block"/>
+                <img src="./images/womanFashion1-min.png" alt="Women Fashion" className="d-block"/>
                 <button className="btn btn-danger">Women Fashion</button>
                 </div>
             </div>
