@@ -1,0 +1,12 @@
+.headerSearch {
+    background-color: #ededeb;
+    border-radius: 15px;
+    color: #17313E;
+    border-right: 1px solid #ededeb;
+}
+
+@media (max-width: 500px) {
+    .headerSearch{
+      display: none; /* hide on tablet & mobile */
+    }   
+}

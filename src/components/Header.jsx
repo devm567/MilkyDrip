@@ -1,4 +1,6 @@
 import styles from "./Header.module.css";
+import SearchFeature from "./SearchFeature.jsx";
+
 
 /* Logo */
 function Logo() {
@@ -21,23 +23,6 @@ function Categories() {
   );
 }
 
-/* Search */
-function Search() {
-  return (
-    <div className={`${styles.headerSearch}`}>
-        <div className=" d-flex align-items-center p-2">
-            <span className={`bi bi-search pe-2 ${styles.searchIcon}`}></span>
-            <input
-                type="text"
-                id="search"
-                placeholder="Search by product"
-                className="input-box border-0"
-            />
-        </div>
-
-    </div>
-  );
-}
 
 /* Login Section */
 function Login() {
@@ -64,7 +49,7 @@ function Header() {
     >
       <Logo />
       <Categories />
-      <Search />
+      <SearchFeature />
       <Login />
       <Hamburger />
     </header>
