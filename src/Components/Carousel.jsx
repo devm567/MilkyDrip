@@ -1,4 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 
 
 export default function Carousel() {
@@ -32,14 +36,22 @@ export default function Carousel() {
   const [current, setCurrent] = useState(0);
   const slideInterval = useRef(null);
 
+   // Go to previous slide
+  const previousSlide = () => {
+    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+  };
 
+  // Go to next slide
+  const nextSlide = () => {
+    setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+  };
 
   // Start autoplay
   const startAutoPlay = () => {
     stopAutoPlay();
     slideInterval.current = setInterval(() => {
       setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 3000); // 3s interval
+    }, 2500); // 3s interval
   };
 
   // Stop autoplay
@@ -99,7 +111,15 @@ export default function Carousel() {
         ))}
       </div>
 
-    
+      {/* Left/Right arrows */}
+      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-5 sm:px-10 text-3xl z-30">
+        <button onClick={previousSlide}>
+          <BsFillArrowLeftCircleFill />
+        </button>
+        <button onClick={nextSlide}>
+          <BsFillArrowRightCircleFill />
+        </button>
+      </div>
 
       {/* Dots navigation */}
       <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full z-30">

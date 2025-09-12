@@ -4,8 +4,7 @@ function Home() {
     return (
         <>
             <div className='w-full h-[90vh]'>
-
-            <Carousel></Carousel>
+                <Carousel></Carousel>
             </div>
         </>
     )
