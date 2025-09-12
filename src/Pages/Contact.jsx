@@ -1,6 +1,12 @@
 import React from 'react';
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Redirect to the home page
+    window.location.href = '/';
+  };
+
   return (
     <div className="bg-black text-white font-sans leading-relaxed">
       <main>
@@ -103,7 +109,7 @@ const Contact = () => {
             <p className="text-gray-300 text-base sm:text-lg text-center mb-8">
               Fill out the form below with your details and your message, and we will get back to you as soon as we can. This is the fastest way to get in touch with our team.
             </p>
-            <form className="bg-gray-900 p-8 rounded-lg shadow-xl space-y-6">
+            <form className="bg-gray-900 p-8 rounded-lg shadow-xl space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">Full Name</label>
                 <input type="text" id="name" name="name" className="w-full p-3 bg-black border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-600 text-white" />
