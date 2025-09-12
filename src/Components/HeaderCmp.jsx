@@ -16,7 +16,7 @@ function HeaderCmp() {
         {/* Desktop: Logo (left) */}
         <div className="hidden lg:block text-2xl font-bold">
           <Link to="/" className="hover:text-amber-300">
-            <img src="/image/headermd.png" alt="Logo"  className="h-[7vh] "/>
+            <img src="/image/i.png" alt="Logo"  className="h-[7vh] "/>
           </Link>
         </div>
 
@@ -42,22 +42,22 @@ function HeaderCmp() {
         {/* Desktop: Nav Links (center) */}
         <div className="hidden lg:flex space-x-8">
           <NavLink to="/new-releases" className={navLinkClass}>
-            New Releases
+            <div className="styledFont">NEW RELEASES</div>
           </NavLink>
           <NavLink to="/top-pics" className={navLinkClass}>
-            Top Pics
+            <div className="styledFont">TOP PICS</div>
           </NavLink>
           <NavLink to="/gaming" className={navLinkClass}>
-            Gaming
+            <div className="styledFont">GAMING</div>
           </NavLink>
           <NavLink to="/horror" className={navLinkClass}>
-            Horror
+            <div className="styledFont">HORROR</div>
           </NavLink>
           <NavLink to="/movies" className={navLinkClass}>
-            Movies
+            <div className="styledFont">MOVIES</div>
           </NavLink>
           <NavLink to="/other" className={navLinkClass}>
-            Other
+            <div className="styledFont">OTHER</div>
           </NavLink>
         </div>
 
