@@ -1,9 +1,12 @@
 import React from 'react'
-import Banner from '../Components/Banner'
+import Carousel from '../Components/Carousel'
 function Home() {
     return (
         <>
-            <Banner></Banner>
+            <div className='w-full h-[90vh]'>
+
+            <Carousel></Carousel>
+            </div>
         </>
     )
 }
