@@ -3,7 +3,7 @@ import React from 'react'
 function Affliates() {
     return (
         <div>
-            This is affliates page
+            This is affliates page and jhgfdrserdtfghj
         </div>
     )
 }

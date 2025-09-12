@@ -16,7 +16,7 @@ function HeaderCmp() {
         {/* Desktop: Logo (left) */}
         <div className="hidden lg:block text-2xl font-bold">
           <Link to="/" className="hover:text-amber-300">
-            MilkyDrip
+            <img src="/image/headermd.png" alt="Logo"  className="h-[7vh] "/>
           </Link>
         </div>
 
@@ -71,7 +71,7 @@ function HeaderCmp() {
             <NavLink to="/wishlist" className={actionLinkClass}>
             <i className="fa-solid fa-heart text-red-600" ></i>
             </NavLink>
-            <NavLink to="/account" className={actionLinkClass}>
+            <NavLink to="/account" className={actionLinkClass} >
               <i className="fa-solid fa-user text-amber-200" ></i>
             </NavLink>
           </div>
