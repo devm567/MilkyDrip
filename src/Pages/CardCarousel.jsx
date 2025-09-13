@@ -1,0 +1,61 @@
+ import React, { useRef } from "react";
+ import { NavLink } from "react-router-dom";
+ import "../Components/CardCarousel.css";
+
+
+// IMPORT your 8 local images from src/assets
+
+
+const cards = [
+  { src: "https://images.pexels.com/photos/4009627/pexels-photo-4009627.jpeg", name: "Gaming", slug: "gaming" },
+  { src: "https://images.pexels.com/photos/25746374/pexels-photo-25746374.jpeg", name: "Movies", slug: "movies" },
+  { src: "https://images.pexels.com/photos/5408185/pexels-photo-5408185.jpeg", name: "Horror", slug: "horror" },
+  { src: "https://images.pexels.com/photos/33741385/pexels-photo-33741385.jpeg", name: "Other", slug: "Other" },
+  { src: "https://images.pexels.com/photos/10464793/pexels-photo-10464793.jpeg", name: "TvShows", slug: "tv-shows" },
+  { src: "https://images.pexels.com/photos/30479724/pexels-photo-30479724.jpeg", name: "Zodiac", slug: "zodiac" }
+
+];
+
+export default function Carousel() {
+  const trackRef = useRef(null);
+
+  const scrollByCards = (dir = 1) => {
+    const track = trackRef.current;
+    if (!track) return;
+    const card = track.querySelector(".card");
+    if (!card) return;
+    const gap = parseInt(getComputedStyle(track).gap) || 20;
+    const cardWidth = card.offsetWidth + gap;
+    // scroll by 2 cards; change multiplier if you want
+    track.scrollBy({ left: cardWidth * 2 * dir, behavior: "smooth" });
+  };
+
+  return (
+    <div className="carousel-wrapper">
+      <div className="m-4">
+        <button className="arrow left" onClick={() => scrollByCards(-1)} aria-label="Scroll left">
+          ‹
+        </button>
+      </div>
+
+      <div className="carousel-track" ref={trackRef}>
+        {cards.map((c, i) => (
+          <NavLink to={`/${c.slug}`} className="card-link" key={i}>
+            <div className="card">
+              <img src={c.src} alt={c.name} />
+              <div className="overlay">
+                <div className="logo">{c.name}</div>
+              </div>
+            </div>
+          </NavLink>
+        ))}
+      </div>
+        <div className="m-3">
+
+      <button className="arrow right" onClick={() => scrollByCards(1)} aria-label="Scroll right">
+        ›
+      </button>
+        </div>
+    </div>
+  );
+}

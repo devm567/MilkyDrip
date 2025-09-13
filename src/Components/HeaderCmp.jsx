@@ -38,7 +38,7 @@ function HeaderCmp() {
   return (
     <>
       {/* Header */}
-      <header className="bg-black text-white fixed top-0 left-0 w-full h-[10vh] z-20">
+      <header className="bg-black text-white fixed top-0 left-0 w-full h-[10vh] z-100">
         <nav className="flex items-center justify-between h-full px-6">
           {/* Desktop: Logo (left) */}
           <div className="hidden lg:block text-2xl font-bold">
