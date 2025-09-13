@@ -2,7 +2,8 @@ import React from "react";
 
 function LoginCmp() {
   return (
-    <form className="max-w-sm mx-auto mt-6 p-6 border rounded-lg shadow-md bg-white">
+    
+      <form className="max-w-sm mx-auto mt-6 p-6 border rounded-lg shadow-md bg-white">
       
       {/* User ID / Email */}
       <div className="mb-4 text-left">
@@ -41,7 +42,9 @@ function LoginCmp() {
       >
         Login
       </button>
-    </form>
+      </form>
+     
+
   );
 }
 

@@ -24,7 +24,7 @@ function FooterCmp({ showPopUp }) {
   }
 
   return (
-    <footer className="bg-black text-white p-6 flex flex-row justify-between mt-4 flex-wrap relative">
+    <footer className="bg-black text-white p-6 flex flex-row justify-between flex-wrap relative">
       {/* Col 1 */}
       <section>
         <h3 className="font-bold text-2xl">SignUp For Latest Update</h3>
