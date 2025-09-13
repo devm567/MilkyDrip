@@ -41,6 +41,7 @@ const About = () => {
           </div>
         </section>
 
+
         {/* Mission and Vision - Improved Text-Only Layout */}
         <section className="bg-gray-900 px-4 py-16">
           <div className="container mx-auto max-w-3xl text-center">
@@ -64,6 +65,45 @@ const About = () => {
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 We envision a future where fashion is synonymous with sustainability and authenticity. Our goal is to become a leading voice in the conscious fashion movement, inspiring other brands and consumers to make more mindful choices. We strive to build a community around shared values, where our customers feel a connection to the products they wear and the story behind them.
               </p>
+=======
+        {/* Mission and Vision - Alternating Image/Text Layout */}
+        <section className="bg-gray-900 px-4 py-16">
+          <div className="container mx-auto">
+            <div className="flex flex-col lg:flex-row items-center lg:space-x-12 mb-16">
+              <div className="lg:w-1/2 mb-8 lg:mb-0 transform translate-y-8 opacity-0 animate-fade-in-up">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 border-l-4 pl-4 border-gray-500">
+                  Our Mission
+                </h2>
+                <p className="text-gray-300 text-base sm:text-lg">
+                  Our mission is to empower individuals to express their unique identity through fashion that is both beautiful and responsible. We are committed to a design process that prioritizes ethical sourcing, sustainable practices, and a minimal environmental footprint. We believe in creating clothes that not only look good but also do good, fostering a community that values conscious consumerism and creativity.
+                </p>
+              </div>
+              <div className="lg:w-1/2 relative group overflow-hidden rounded-lg shadow-xl transform translate-y-8 opacity-0 animate-fade-in-up-delay-2">
+                <img
+                  src="https://images.pexels.com/photos/4099238/pexels-photo-4099238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Our Mission"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+              </div>
+            </div>
+            <div className="flex flex-col lg:flex-row items-center lg:space-x-12">
+              <div className="lg:w-1/2 mb-8 lg:mb-0 transform translate-y-8 opacity-0 animate-fade-in-up-delay-3 order-2 lg:order-1">
+                <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 border-l-4 pl-4 border-gray-500">
+                  Our Vision
+                </h2>
+                <p className="text-gray-300 text-base sm:text-lg">
+                  We envision a future where fashion is synonymous with sustainability and authenticity. Our goal is to become a leading voice in the conscious fashion movement, inspiring other brands and consumers to make more mindful choices. We strive to build a community around shared values, where our customers feel a connection to the products they wear and the story behind them.
+                </p>
+              </div>
+              <div className="lg:w-1/2 relative group overflow-hidden rounded-lg shadow-xl transform translate-y-8 opacity-0 animate-fade-in-up-delay-4 order-1 lg:order-2">
+                <img
+                  src="https://images.pexels.com/photos/8137278/pexels-photo-8137278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Our Vision"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+              </div>
             </div>
           </div>
         </section>
