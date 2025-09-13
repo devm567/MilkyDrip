@@ -10,14 +10,16 @@ function Account() {
     }
     return (
         <>
-        <div className='text-center'>
-            <button className={`p-2 border text-white rounded min-w-[20%] m-4 font-bold hover:cursor-pointer ${login===false ? "bg-green-700":"bg-blue-700"}`} onClick={()=>{setlogin("signUp")}}>Sign Up</button>
-            <button className={`bg-blue-700 text-white p-2 border rounded min-w-[20%] m-4 font-bold hover:cursor-pointer ${login===false ? "bg-blue-700":"bg-green-700"}`} onClick={()=>setlogin("login")}>Login </button>
+        <div className="bg-gradient-to-r from-purple-400 to-pink-600 pb-4">
+            <div className='text-center'>
+                <button className={`p-2 border text-white rounded min-w-[20%] m-4 font-bold hover:cursor-pointer bg-green-700`} onClick={()=>{setlogin("signUp")}}>Sign Up</button>
+                <button className={`bg-blue-700 text-white p-2 border rounded min-w-[20%] m-4 font-bold hover:cursor-pointer `} onClick={()=>setlogin("login")}>Login </button>
+            </div>
+            
+            {/* Conditional Rendering */}
+            {login==="login" && <LoginCmp></LoginCmp>}
+            {login==="signUp" && <SignUpCmp></SignUpCmp>}
         </div>
-        {/* Conditional Rendering */}
-        {login==="login" && <LoginCmp></LoginCmp>}
-        {login==="signUp" && <SignUpCmp></SignUpCmp>}
-        
         </>
     )
 }
