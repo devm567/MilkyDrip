@@ -27,8 +27,8 @@ function HeaderCmp() {
 
   // Array for categories of product
   const categories = [
-    { name: "New Releases", path: "/new-releases" },
-    { name: "Top Pics", path: "/top-pics" },
+    { name: "Zodiac", path: "/Zodiac" },
+    { name: "Nostalgia", path: "/Nostaligia" },
     { name: "Gaming", path: "/gaming" },
     { name: "Horror", path: "/horror" },
     { name: "Movies", path: "/movies" },
