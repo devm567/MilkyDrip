@@ -31,31 +31,34 @@ export default function Carousel() {
   };
 
   return (
-    <div className="carousel-wrapper">
-      <div className="m-4">
-        <button className="arrow left" onClick={() => scrollByCards(-1)} aria-label="Scroll left">
-          ‹
-        </button>
-      </div>
-
-      <div className="carousel-track" ref={trackRef}>
-        {cards.map((c, i) => (
-          <NavLink to={`/${c.slug}`} className="card-link" key={i}>
-            <div className="card">
-              <img src={c.src} alt={c.name} />
-              <div className="overlay">
-                <div className="logo">{c.name}</div>
-              </div>
-            </div>
-          </NavLink>
-        ))}
-      </div>
-        <div className="m-3">
-
-      <button className="arrow right" onClick={() => scrollByCards(1)} aria-label="Scroll right">
-        ›
-      </button>
+    <>
+      <h1 className="mt-4 styledFont text-4xl text-center" style={{fontSize:"40px"}}> Our Collections </h1>
+      <div className="carousel-wrapper">
+        <div className="m-4">
+          <button className="arrow left" onClick={() => scrollByCards(-1)} aria-label="Scroll left">
+            ‹
+          </button>
         </div>
-    </div>
+
+        <div className="carousel-track" ref={trackRef}>
+          {cards.map((c, i) => (
+            <NavLink to={`/${c.slug}`} className="card-link" key={i}>
+              <div className="card">
+                <img src={c.src} alt={c.name} />
+                <div className="overlay">
+                  <div className="logo">{c.name}</div>
+                </div>
+              </div>
+            </NavLink>
+          ))}
+        </div>
+          <div className="m-3">
+
+        <button className="arrow right" onClick={() => scrollByCards(1)} aria-label="Scroll right">
+          ›
+        </button>
+          </div>
+      </div>
+    </>
   );
 }
