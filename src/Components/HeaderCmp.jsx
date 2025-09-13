@@ -11,7 +11,7 @@ function HeaderCmp() {
     isActive ? "text-amber-400 font-bold" : "hover:text-gray-300";
 
   return (
-    <header className="bg-black text-white fixed top-0 left-0 w-full h-[10vh] z-50">
+    <header className="bg-black text-white fixed top-0 left-0 w-full h-[10vh] z-1">
       <nav className="flex items-center justify-between h-full px-6">
         {/* Desktop: Logo (left) */}
         <div className="hidden lg:block text-2xl font-bold">
@@ -35,7 +35,7 @@ function HeaderCmp() {
         {/* Mobile/Tablet: Logo (center) */}
         <div className="lg:hidden text-xl font-bold">
           <Link to="/" className="hover:text-amber-300">
-            MilkyDrip
+            <img src="/image/i.png" alt="Logo"  className="h-[7vh]"/>
           </Link>
         </div>
 
