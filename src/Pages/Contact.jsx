@@ -33,31 +33,6 @@ const Contact = () => {
               At Milky Drip, we are committed to providing you with the best possible experience. Whether you have a question about an order, a query about our sustainable practices, or an exciting collaboration idea, our team is ready to assist you. Below, you will find different ways to connect with us, ensuring your message gets to the right people. We value your feedback and look forward to hearing from you. Your input helps us grow and improve, so please don't hesitate to reach out. We aim to respond to all inquiries within 24-48 hours.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
-            <div className="relative group overflow-hidden rounded-lg shadow-lg aspect-video transform transition duration-500 hover:scale-105">
-              <img
-                src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="General Inquiries"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
-                <p className="text-white text-xl font-semibold mb-2">General Inquiries</p>
-                <p className="text-gray-300 text-sm">For all general questions about our brand or website.</p>
-              </div>
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-lg aspect-video transform transition duration-500 hover:scale-105">
-              <img
-                src="https://images.pexels.com/photos/3760233/pexels-photo-3760233.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Customer Support"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-center">
-                <p className="text-white text-xl font-semibold mb-2">Customer Support</p>
-                <p className="text-gray-300 text-sm">Questions about your order, shipping, or returns.</p>
-              </div>
-            </div>
-          </div>
         </section>
 
         {/* Specific Contact Channels Section */}
@@ -69,16 +44,8 @@ const Contact = () => {
                   Customer Support
                 </h2>
                 <p className="text-gray-300 text-base sm:text-lg mb-6">
-                  Our dedicated support team is available to assist you with any issues or questions related to your purchases. From tracking your order to initiating a return, we're here to ensure a smooth and hassle-free experience. Before reaching out, please check our FAQ section on our website, as many common questions have already been answered there. If you don't find what you're looking for, please use the contact form or email us directly at **support@milkydrip.com**. We are committed to resolving your concerns promptly and efficiently.
+                  Our dedicated support team is available to assist you with any issues or questions related to your purchases. From tracking your order to initiating a return, we're here to ensure a smooth and hassle-free experience. Before reaching out, please check our FAQ section on our website, as many common questions have already been answered there. If you don't find what you're looking for, please email us directly at **support@milkydrip.com**. We are committed to resolving your concerns promptly and efficiently.
                 </p>
-                <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-xl">
-                  <img
-                    src="https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Customer Support Desk"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-                </div>
               </div>
               <div className="lg:w-1/2">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -87,14 +54,6 @@ const Contact = () => {
                 <p className="text-gray-300 text-base sm:text-lg">
                   Milky Drip is always excited to connect with like-minded individuals and brands who share our passion for fashion and sustainability. If you are an influencer, a designer, or a media professional interested in collaborating with us or featuring our brand, we would love to hear from you. Please send your proposals or press kits to **collab@milkydrip.com** or **press@milkydrip.com**. We are open to various forms of collaboration, including product reviews, interviews, and partnership opportunities. Our marketing team will review your message and get back to you as soon as possible.
                 </p>
-                <div className="relative w-full h-64 mt-6 rounded-lg overflow-hidden shadow-xl">
-                  <img
-                    src="https://images.pexels.com/photos/10398688/pexels-photo-10398688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Collaboration Meeting"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -142,14 +101,7 @@ const Contact = () => {
             <p className="text-lg sm:text-xl font-light mb-8 max-w-2xl mx-auto">
               You are welcome to visit our physical location for a closer look at our collections.
             </p>
-            <div className="relative w-full max-w-lg mx-auto h-64 rounded-lg overflow-hidden shadow-xl">
-              <img
-                src="https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Our Headquarters"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-            </div>
+            {/* Image removed from here */}
             <p className="text-sm mt-4 text-gray-700">
               123 Drip Street, Fashion City, DR 45678
             </p>
