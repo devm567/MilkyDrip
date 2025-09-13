@@ -41,6 +41,31 @@ const About = () => {
           </div>
         </section>
 
+
+        {/* Mission and Vision - Improved Text-Only Layout */}
+        <section className="bg-gray-900 px-4 py-16">
+          <div className="container mx-auto max-w-3xl text-center">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-12 animate-fade-in-up">
+              Our Mission & Vision
+            </h2>
+            
+            <div className="mb-12 animate-fade-in-up-delay-1">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 border-b-2 border-gray-500 inline-block pb-2">
+                Our Mission
+              </h3>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                Our mission is to empower individuals to express their unique identity through fashion that is both beautiful and responsible. We are committed to a design process that prioritizes ethical sourcing, sustainable practices, and a minimal environmental footprint. We believe in creating clothes that not only look good but also do good, fostering a community that values conscious consumerism and creativity.
+              </p>
+            </div>
+
+            <div className="animate-fade-in-up-delay-2">
+              <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 border-b-2 border-gray-500 inline-block pb-2">
+                Our Vision
+              </h3>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+                We envision a future where fashion is synonymous with sustainability and authenticity. Our goal is to become a leading voice in the conscious fashion movement, inspiring other brands and consumers to make more mindful choices. We strive to build a community around shared values, where our customers feel a connection to the products they wear and the story behind them.
+              </p>
+=======
         {/* Mission and Vision - Alternating Image/Text Layout */}
         <section className="bg-gray-900 px-4 py-16">
           <div className="container mx-auto">

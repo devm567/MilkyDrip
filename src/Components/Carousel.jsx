@@ -111,7 +111,7 @@ export default function Carousel() {
       </div>
 
       {/* Left/Right arrows */}
-      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-5 sm:px-10 text-3xl z-30">
+      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-5 sm:px-10 text-3xl z-0">
         <button onClick={previousSlide}>
           <BsFillArrowLeftCircleFill />
         </button>
