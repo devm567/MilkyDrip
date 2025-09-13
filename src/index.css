@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.styledFont{
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: larger;
+}
