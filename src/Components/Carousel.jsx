@@ -20,13 +20,13 @@ export default function Carousel() {
       buttonLink: "#",
     },
     {
-      image: "https://images.pexels.com/photos/1319828/pexels-photo-1319828.jpeg",
+      image: "https://images.pexels.com/photos/15647535/pexels-photo-15647535.jpeg",
       title: "Abstract Design",
       buttonText: "Discover",
       buttonLink: "#",
     },
     {
-      image: "https://images.pexels.com/photos/8327550/pexels-photo-8327550.jpeg",
+      image: "https://images.pexels.com/photos/28570996/pexels-photo-28570996.jpeg",
       title: "Vintage Collection",
       buttonText: "Buy Now",
       buttonLink: "#",
@@ -88,8 +88,7 @@ export default function Carousel() {
               className="w-full h-full object-cover object-center"
             />
 
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/40 z-10"></div>
+            
 
             {/* Text content */}
             <div className="absolute bottom-8 right-8 sm:bottom-16 sm:right-16 text-right z-20">

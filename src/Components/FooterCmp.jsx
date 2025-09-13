@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import PopUpComponent from "./PopUpComponent";
 
-function FooterCmp({ showPopUp }) {
+function FooterCmp() {
   const [email, setEmail] = useState("");
+  const [msg,setMsg] = useState("");
 
   function loadPage(URL) {
     window.open(URL, "_blank");
@@ -10,21 +12,22 @@ function FooterCmp({ showPopUp }) {
 
   function handleSubmit() {
     const emailRegex = /^[^@]+@[^@]+\.[^@]+$/;
-    let msg;
 
     if (email === "" || !emailRegex.test(email)) {
-      msg = "Please Enter valid Mail id";
+      setMsg("Please Enter valid Mail id");
     } else {
-      msg = "Thank You! We will keep you updated ... ";
+      setMsg("Thank You! We will keep you updated ... ");
     }
-
-    showPopUp(msg);
+    
     setEmail(""); 
+    setTimeout(() => setMsg(""), 2100);
   
   }
 
   return (
-    <footer className="bg-black text-white p-6 flex flex-row justify-between mt-4 flex-wrap relative">
+    <>
+      {msg && <PopUpComponent msg={msg} />}
+      <footer className="bg-black text-white p-6 flex flex-row justify-between flex-wrap relative">
       {/* Col 1 */}
       <section>
         <h3 className="font-bold text-2xl">SignUp For Latest Update</h3>
@@ -101,7 +104,8 @@ function FooterCmp({ showPopUp }) {
           </Link>
         </nav>
       </section>
-    </footer>
+      </footer>
+    </>
   );
 }
 
