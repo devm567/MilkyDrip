@@ -1,0 +1,175 @@
+/* General Page Layout */
+.product-page {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f0f2f5; /* Adds a light background for better visibility */
+}
+
+.product-grid {
+    /* Ensures at least two columns on most screens */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px; /* Limits the max width of the grid */
+    margin: 0 auto; /* Centers the grid */
+}
+
+/* Card Component Styles */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Ensures content inside the card is aligned properly */
+    flex-direction: column;
+    height: 100%; /* Makes all cards the same height */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the key change for images */
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .product-image {
+    transform: scale(1.1);
+}
+
+.random-artist-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Card Details */
+.card-details {
+    padding: 15px;
+    flex-grow: 1; /* Makes card details section fill remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes price to the bottom */
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0;
+    line-height: 1;
+}
+
+.heart-symbol {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.heart-symbol.wishlisted {
+    color: red;
+}
+
+.plus-symbol {
+    color: #555;
+    font-weight: bold;
+}
+
+.artist-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+}
+
+.product-title {
+    font-size: 18px;
+    margin: 5px 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Pushes the price and rating to the bottom */
+}
+
+.rating {
+    font-size: 14px;
+    color: #666;
+}
+
+.star-symbol {
+    color: #ffc107;
+    margin-left: 2px;
+}
+
+.price-in-dollar {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Cart Message */
+.cart-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    animation: fadeOut 2s forwards;
+    z-index: 1000;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+/* Loading and Error Messages */
+.loading-message, .error-message {
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: #888;
+}

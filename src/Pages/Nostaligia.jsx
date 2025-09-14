@@ -1,9 +1,12 @@
 import React from 'react'
+import Urls from '../assests/Urls'
+import ProductPage from './ProductPage'
+
 
 function Nostaligia() {
     return (
-        <div>
-            This is Nostaligia page
+        <div className='mt-[15vh]'>
+            <ProductPage URL={Urls.nostalgia} Heading={"Nostalgia"}></ProductPage>
         </div>
     )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousel from '../Components/Carousel'
 import CardCarousel from './CardCarousel'
+import ProductPage from './ProductPage'
+import Urls from '../assests/Urls'
 function Home() {
     return (
         <>
@@ -10,6 +12,10 @@ function Home() {
                 </div>
                 <div>
                     <CardCarousel></CardCarousel>
+                </div>
+                <div className='border-t-gray-300'>
+                    
+                    <ProductPage URL={Urls.gaming} Heading={"Gaming"}></ProductPage>
                 </div>
             </section>
         </>
