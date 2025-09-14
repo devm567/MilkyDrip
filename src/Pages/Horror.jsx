@@ -1,9 +1,11 @@
 import React from 'react'
+import Urls from '../assests/Urls'
+import ProductPage from './ProductPage'
 
 function Horror() {
     return (
-        <div>
-            This is Horror Page 
+        <div className='mt-[15vh]'>
+            <ProductPage URL={Urls.horror} Heading={"Horror"}></ProductPage>
         </div>
     )
 }
