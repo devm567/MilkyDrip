@@ -1,5 +1,6 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { ShoppingCart, Heart, User } from "lucide-react";
 
 function HeaderCmp() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,8 +28,8 @@ function HeaderCmp() {
 
   // Array for categories of product
   const categories = [
-    { name: "Zodiac", path: "/Zodiac" },
-    { name: "Nostalgia", path: "/Nostaligia" },
+    { name: "Zodiac", path: "/zodiac" },
+    { name: "Nostalgia", path: "/nostalgia" },
     { name: "Gaming", path: "/gaming" },
     { name: "Horror", path: "/horror" },
     { name: "Movies", path: "/movies" },
@@ -80,13 +81,13 @@ function HeaderCmp() {
             {/* Desktop: Cart + Wishlist + Account */}
             <div className="hidden lg:flex items-center space-x-6">
               <NavLink to="/cart" className={actionLinkClass}>
-                <i className="fa-solid fa-cart-shopping text-amber-200"></i>
+                <ShoppingCart className="w-6 h-6 text-amber-200 hover:text-white transition" />
               </NavLink>
               <NavLink to="/wishlist" className={actionLinkClass}>
-                <i className="fa-solid fa-heart text-red-600"></i>
+                <Heart className="w-6 h-6 text-red-500 hover:text-white transition" />
               </NavLink>
               <NavLink to="/account" className={actionLinkClass}>
-                <i className="fa-solid fa-user text-amber-200"></i>
+                <User className="w-6 h-6 text-amber-200 hover:text-white transition" />
               </NavLink>
             </div>
 

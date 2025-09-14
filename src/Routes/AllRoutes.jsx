@@ -11,7 +11,7 @@ import Gaming from "../Pages/Gaming";
 import Horror from "../Pages/Horror";
 import Movies from "../Pages/Movies";
 import NewReleases from "../Pages/NewReleases";
-import Nostaligia from "../Pages/Nostaligia";
+import Nostalgia from "../Pages/Nostalgia";
 import TopPics from "../Pages/TopPics";
 import TvShows from "../Pages/TvShows";
 import Zodiac from "../Pages/Zodiac";
@@ -24,6 +24,11 @@ import Others from "../Pages/Others";
 import Account from "../Pages/Account";
 import Cart from "../Pages/Cart";
 import Wishlist from "../Pages/Wishlist";
+import Hoodies from "../Pages/Hoodies";
+import Phonecases from "../Pages/Phonecases";
+import Stickers from "../Pages/Stickers";
+import Tanks from "../Pages/Tanks";
+import Tees from "../Pages/Tees"
 
 function AllRoutes() {
   return (
@@ -39,7 +44,7 @@ function AllRoutes() {
         <Route path="horror" element={<Horror/>}/>
         <Route path="movies" element={<Movies/>}/>
         <Route path="new-releases" element={<NewReleases/>}/>
-        <Route path="nostaligia" element={<Nostaligia/>}/>
+        <Route path="nostalgia" element={<Nostalgia/>}/>
         <Route path="top-pics" element={<TopPics/>}/>
         <Route path="tv-shows" element={<TvShows/>}/>
         <Route path="zodiac" element={<Zodiac/>}/>
@@ -52,8 +57,11 @@ function AllRoutes() {
         <Route path="account" element={<Account/>}/>
         <Route path="cart" element={<Cart/>}/>
         <Route path="wishlist" element={<Wishlist/>}/>
-
-
+        <Route path="tees" element={<Tees/>}/>
+        <Route path="hoodies" element={<Hoodies/>}/>
+        <Route path="phone-cases" element={<Phonecases/>}/>
+        <Route path="stickers" element={<Stickers/>}/>
+        <Route path="tanks" element={<Tanks/>}/>
       </Route>
     </Routes>
   );

@@ -33,7 +33,7 @@ const ProductPage2 = ({URL,Heading}) => {
 
     return (
         <>
-            <h2 className="mt-4 styledFont text-4xl mb-3 ml-2" style={{fontSize:"40px"}}> {Heading} </h2>
+            <h2 className="mt-4 styledFont text-4xl mb-2 ml-2" style={{fontSize:"28px"}}> {Heading} </h2>
             <div className="product-page2z">
                 <div className="product-flexz">
                     {products.map(product => (

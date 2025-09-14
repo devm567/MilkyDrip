@@ -27,7 +27,7 @@ function FooterCmp() {
   return (
     <>
       {msg && <PopUpComponent msg={msg} />}
-      <footer className="bg-black text-white p-6 flex flex-row justify-between flex-wrap relative mt-3">
+      <footer className="bg-black text-white p-6 flex flex-row justify-between flex-wrap relative mt-15">
       {/* Col 1 */}
       <section>
         <h3 className="font-bold text-2xl styledFont">SignUp For Latest Update</h3>

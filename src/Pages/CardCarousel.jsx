@@ -10,7 +10,7 @@ const cards = [
   { src: "https://images.pexels.com/photos/4009627/pexels-photo-4009627.jpeg?auto=compress&cs=tinysrgb&w=800", name: "Gaming", slug: "gaming" },
   { src: "https://images.pexels.com/photos/25746374/pexels-photo-25746374.jpeg?auto=compress&cs=tinysrgb&w=800", name: "Movies", slug: "movies" },
   { src: "https://images.pexels.com/photos/5408185/pexels-photo-5408185.jpeg?auto=compress&cs=tinysrgb&w=800", name: "Horror", slug: "horror" },
-  { src: "https://images.pexels.com/photos/33741385/pexels-photo-33741385.jpeg?auto=compress&cs=tinysrgb&w=800", name: "TvShows", slug: "tv-shows" },
+  { src: "https://images.pexels.com/photos/33741385/pexels-photo-33741385.jpeg?auto=compress&cs=tinysrgb&w=800", name: "Tv-Shows", slug: "tv-shows" },
   { src: "https://images.pexels.com/photos/30479724/pexels-photo-30479724.jpeg?auto=compress&cs=tinysrgb&w=800", name: "Zodiac", slug: "zodiac" },
   { src: "https://images.pexels.com/photos/10464793/pexels-photo-10464793.jpeg?auto=compress&cs=tinysrgb&w=800", name: "Other", slug: "Other" }
 
