@@ -6,8 +6,6 @@
     font-weight: bold;
     font-style: normal;
     font-size: larger;
+    text-transform: uppercase;
 }
 
-body{
-    background: #F0ECE1;
-}

@@ -30,11 +30,17 @@ const ProductPage = ({URL,Heading}) => {
     if (loading) return <div className="loading-message">Loading products...</div>;
     if (error) return <div className="error-message">Error: {error}</div>;
 
+    const isHome = Heading.toLowerCase() === "18$ new-releases!" || Heading.toLowerCase() === "top-picks!";
+
+    const headingClass = isHome ? "ml-2" : "text-center";
+    const procss = isHome ? "product-flex" : "product-grid";
+    const propage = isHome ? "product-page2" : "product-page1";
+
     return (
         <>
-            <h2 className="mt-4 styledFont text-4xl text-center mb-3" style={{fontSize:"40px"}}> {Heading} </h2>
-            <div className="product-page">
-                <div className="product-grid">
+            <h2 className={`mt-4 styledFont text-4xl mb-3 ${headingClass}`} style={{fontSize:"40px"}}> {Heading} </h2>
+            <div className={`${propage}`}>
+                <div className={`${procss}`}>
                     {products.map(product => (
                         <ProductCard key={product.id} product={product} />
                     ))}

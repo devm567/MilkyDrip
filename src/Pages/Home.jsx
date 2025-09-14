@@ -13,9 +13,14 @@ function Home() {
                 <div>
                     <CardCarousel></CardCarousel>
                 </div>
-                <div className='border-t-gray-300'>
+                <div className='border-t-gray-300 mt-15'>
                     
-                    <ProductPage URL={Urls.gaming} Heading={"Gaming"}></ProductPage>
+                    <ProductPage URL={Urls['new-releases']} Heading={"18$ new-releases!"}></ProductPage>
+                </div>
+
+                <div className='border-t-gray-300 mt-15'>
+                    
+                    <ProductPage URL={Urls['top-picks']} Heading={"top-picks!"}></ProductPage>
                 </div>
             </section>
         </>
